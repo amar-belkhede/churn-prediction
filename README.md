@@ -25,10 +25,10 @@ Find the Docker Image of the webapp [here](https://hub.docker.com/r/amarbelkhede
 
 1. Entering customer information in the given fields
 <p align='center'>
-<img src="assets/Homepage.png" />
+<img src="assets/Homepage.png" width="600px" />
 </p>
 
 2. Output given by our Application
 <p align='center'>
-<img src="assets/PredictionResult.png" />
+<img src="assets/PredictionResult.png" width="600px" />
 </p>
