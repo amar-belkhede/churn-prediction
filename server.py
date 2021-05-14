@@ -9,11 +9,6 @@ from serializer import serializerJson
 HEADERS = {'Content-type': 'application/json', 'Accept': 'text/plain'}
 
 
-# @app.route('/')
-# def index():
-#     return render_template('index.html')
-
-
 def flask_app():
     app = Flask(__name__)
 
@@ -27,11 +22,11 @@ def flask_app():
 
         to_predict = serializerJson(to_form)
 
-        prediction = 'The customer will not churn'
+        prediction = 'Congratulations! The customer will not churn 😀'
         if to_predict[1] == '1':
-            prediction = 'The customer will churn'
+            prediction = 'Oh no! The customer will churn 😢'
         else:
-            prediction = 'The customer will not churn'
+            prediction = 'Congratulations! The customer will not churn 😀'
         return render_template('result.html', prediction=prediction)
     return app
 

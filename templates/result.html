@@ -1,12 +1,25 @@
 <!doctype html>
 <html>
 
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
 <body>
-    <h1>Here is the result:</h1>
-    <h2>
-        {{prediction}}
-    </h2>
-    <li><a href="/">go back</a>
+    <div align="center" style="padding-top: 100px;">
+
+        <h1>Here is the result:</h1>
+        <h2>
+            {{prediction}}
+        </h2>
+        <!-- <li><a href="/">go back</a> -->
+
+        <div class="container">
+            <input class="btn btn-primary" type="submit" value="Go Back" onclick="history.back()">
+        </div>
+    </div>
 </body>
 
 </html>

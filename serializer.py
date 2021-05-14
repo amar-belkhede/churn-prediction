@@ -72,6 +72,7 @@ initial = {"SeniorCitizen": 0,
 output = initial
 
 
+# Defining serializerJson to convert Json data into DataFrame to feed into model
 def serializerJson(input):
 
     # print(output)
@@ -223,9 +224,3 @@ def serializerJson(input):
     # json_pred = json.dumps(resNorm)
 
     return json_pred
-
-# def main():
-#     output = initial
-
-# if __name__ == "__main__":
-#     main()
